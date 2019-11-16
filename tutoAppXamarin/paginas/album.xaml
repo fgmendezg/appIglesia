@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tutoAppXamarin.paginas.album"
+             Title="Album">
+
+    <ContentPage BackgroundColor="Black">
+        <ContentPage.Content>
+            <Image Source="album_1.jfif" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"></Image>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage BackgroundColor="Black">
+        <ContentPage.Content>
+            <Image Source="album_2.jpeg" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"></Image>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage BackgroundColor="Black">
+        <ContentPage.Content>
+            <Image Source="album_3.jfif" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"></Image>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage BackgroundColor="Black">
+        <ContentPage.Content>
+            <Image Source="album_4.jfif" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"></Image>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage BackgroundColor="Black">
+        <ContentPage.Content>
+            <Image Source="album_5.jfif" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"></Image>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage BackgroundColor="Black">
+        <ContentPage.Content>
+            <Image Source="album_6.jpg" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"></Image>
+        </ContentPage.Content>
+    </ContentPage>
+
+</CarouselPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tutoAppXamarin.paginas.Multimedia"
+             Title="Multimedia"
+             IconImageSource="multimedia_24.png">
+    
+    <ContentPage.Content>
+        <Grid>
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OpenAlbum" NumberOfTapsRequired="1"></TapGestureRecognizer>
+            </Grid.GestureRecognizers>
+
+            <Image Source="album_1.jfif" Aspect="AspectFill" HeightRequest="183" Grid.Row="0">
+                <!--<Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OpenAlbum"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>-->
+            </Image>
+            <Label Text="Album 1" TextColor="White" FontSize="22" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" Grid.Row="0"/>
+
+            <Image Source="album_2.jpeg" Aspect="AspectFill" HeightRequest="183" Grid.Row="1"/>
+            <Label Text="Album 2" TextColor="white" FontSize="22" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" Grid.Row="1"/>
+
+            <Image Source="album_3.jfif" Aspect="AspectFill" HeightRequest="183" Grid.Row="2"/>
+            <Label Text="Album 3" TextColor="white" FontSize="22" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" Grid.Row="2"/>
+
+            <Image Source="album_4.jfif" Aspect="AspectFill" HeightRequest="183" Grid.Row="3"/>
+            <Label Text="Album 4" TextColor="white" FontSize="22" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" Grid.Row="3"/>
+
+            <Image Source="album_5.jfif" Aspect="AspectFill" HeightRequest="183" Grid.Row="4"/>
+            <Label Text="Album 5" TextColor="white" FontSize="22" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" Grid.Row="4"/>
+
+            <Image Source="album_6.jpeg" Aspect="AspectFill" HeightRequest="183" Grid.Row="5"/>
+            <Label Text="Album 6" TextColor="white" FontSize="22" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" Grid.Row="5"/>
+
+        </Grid>
+    </ContentPage.Content>
+    
+</ContentPage>

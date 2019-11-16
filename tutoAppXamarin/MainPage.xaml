@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tutoAppXamarin.MainPage"
+             Title="Pastoral Vocacional Facatativá">
+
+
+    <ContentPage.Content>
+
+
+        <!--Si no se definen columnas ni filas
+        usa todo el ancho de la vista-->
+
+        <Grid>
+
+            <Image Source="wallpaper.png" Aspect="AspectFill"></Image>
+
+
+            <!--Caja de color-->
+            <BoxView Color="Azure" Opacity="0.8"></BoxView>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Column="0" Padding="30,20" HorizontalOptions="CenterAndExpand">
+                    <Image Grid.Row="0" Source="iglesia.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"></Image>
+                    <Entry Placeholder="Correo Eléctronico" PlaceholderColor="Black"></Entry>
+                    <Entry Placeholder="Contraseña" PlaceholderColor="Black" IsPassword="True"></Entry>
+                    <Button x:Name="btnIniciarSesion" Text="Iniciar Sesión" BackgroundColor="White" BorderRadius="20" TextColor="BlueViolet"></Button>
+
+                    <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+                        <Label Text="Olvide mi Contraseña">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OpenRecuperacionPass" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label Text="Registrarme" HorizontalOptions="EndAndExpand" FontAttributes="Bold"></Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="2" HorizontalOptions="Center" Margin="0,120,0,0">
+                        <Label Text="Iniciar Sesion con" HorizontalOptions="Center"></Label>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Grid.Row="0" Source="facebook_logopng.png" WidthRequest="45" HeightRequest="45"></Image>
+                            <Image Grid.Row="0" Source="instagram_logo.png" WidthRequest="45" HeightRequest="45"></Image>
+                            <Image Grid.Row="0" Source="twitter_logo.png" WidthRequest="45" HeightRequest="45"></Image>
+                            <Image Grid.Row="0" Source="gmail_logo.png" WidthRequest="45" HeightRequest="45"></Image>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+
+            </Grid>
+
+        </Grid>
+
+    </ContentPage.Content>
+
+</ContentPage>

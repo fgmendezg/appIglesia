@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tutoAppXamarin.paginas.manageSesion.wirteTokenEmail"
+             Title="Verificación de Identidad">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="wallpaper.png" Aspect="AspectFill"></Image>
+            <BoxView Color="Azure" Opacity="0.8"></BoxView>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Ingrese el token que fue enviado a su correo" 
+                       VerticalOptions="Start" HorizontalOptions="CenterAndExpand" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                <Label Text="electronico" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                <Entry Placeholder="" PlaceholderColor="Black" x:Name="entryToken"></Entry>
+                <Button x:Name="btnAceptar" Text="Aceptar" BackgroundColor="White" BorderRadius="20" TextColor="BlueViolet"></Button>
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tutoAppXamarin.paginas.tp_home"
+             Title="Noticias"
+             IconImageSource="home_24.png">
+
+    <ContentPage.Content>
+
+        <Grid>
+            <Image Source="wallpaper.png" Aspect="AspectFill"></Image>
+            <BoxView Color="Azure" Opacity="0.8"></BoxView>
+
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Grid.Row="0" HorizontalOptions="StartAndExpand" Margin="10,20,10,10">
+                        <Image Source="p1_48.png" WidthRequest="48" HeightRequest="48" HorizontalOptions="StartAndExpand"></Image>
+                        <Label Text="All Xamarin.Forms-supported platforms have a modal pop-up to alert the user or ask simple questions of them" 
+                               TextColor="Black" HorizontalOptions="Center"></Label>
+                        <Image Source="album_7.jpg" HorizontalOptions="CenterAndExpand"></Image>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" HorizontalOptions="StartAndExpand" Margin="10,20,10,10">
+                        <Image Source="p2_48.png" WidthRequest="48" HeightRequest="48" HorizontalOptions="StartAndExpand"></Image>
+                        <Label Text="Displaying an alert, asking a user to make a choice, or displaying a prompt is a common UI task." TextColor="Black"></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" HorizontalOptions="StartAndExpand" Margin="10,20,10,10">
+                        <Image Source="p3_48.png" WidthRequest="48" HeightRequest="48" HorizontalOptions="StartAndExpand"></Image>
+                        <Label Text="The method returns the string label of the button that was clicked by the user." TextColor="Black"></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" HorizontalOptions="StartAndExpand" Margin="10,20,10,10">
+                        <Image Source="p4_48.png" WidthRequest="48" HeightRequest="48" HorizontalOptions="StartAndExpand"></Image>
+                        <Label Text="If the OK button is tapped, the entered response is returned as a string. If the Cancel button is tapped, null is returned." 
+                               TextColor="Black"></Label>
+                        <Image Source="album_4.jfif" HorizontalOptions="CenterAndExpand"></Image>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" HorizontalOptions="StartAndExpand" Margin="10,20,10,10">
+                        <Image Source="p5_48.png" WidthRequest="48" HeightRequest="48" HorizontalOptions="StartAndExpand"></Image>
+                        <Label Text="The following example shows setting some of the optional arguments" TextColor="Black"></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" HorizontalOptions="StartAndExpand" Margin="10,20,10,10">
+                        <Image Source="p6_48.png" WidthRequest="48" HeightRequest="48" HorizontalOptions="StartAndExpand"></Image>
+                        <Label Text="The Color property is of type Color; the property can be set to any Color value," TextColor="Black"></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" HorizontalOptions="StartAndExpand" Margin="10,20,10,10">
+                        <Image Source="p7_48.png" WidthRequest="48" HeightRequest="48" HorizontalOptions="StartAndExpand"></Image>
+                        <Label Text="A BoxView can be constrained in one dimension and unconstrained in the other. For example, if the BoxView is a child of a vertical StackLayout, the vertical dimension of the BoxView is unconstrained and its horizontal dimension is generally constrained." 
+                               TextColor="Black"></Label>
+                        <Image Source="album_6.jpg" HorizontalOptions="CenterAndExpand"></Image>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" HorizontalOptions="StartAndExpand" Margin="10,20,10,10">
+                        <Image Source="p8_48.png" WidthRequest="48" HeightRequest="48" HorizontalOptions="StartAndExpand"></Image>
+                        <Label Text="The stylish header at the top of the page is achieved with an AbsoluteLayout whose children are four BoxView elements and a Label" 
+                               TextColor="Black"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+
+    </ContentPage.Content>
+
+</ContentPage>
